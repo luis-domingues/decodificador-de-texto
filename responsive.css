@@ -1,0 +1,78 @@
+@media only screen and (min-width: 768px) {
+body {
+    position: relative;
+}
+
+    header>.logo {
+        padding-top: 4.527rem;
+        padding-left: 2.5rem;
+    }
+
+    main {
+        margin-top: 10rem;
+    }
+
+    main>input {
+        width: 688px;
+        line-height: 3rem;
+    }
+
+    .message {
+        padding-top: 34.25rem;
+        width: 688px;
+    }
+
+    .button__container {
+        margin: 1.5rem 2.5rem;
+        width: 688px;
+        height: 40px;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .button__encrypt,
+    .button__descrypt {
+        width: 332px;
+    }
+
+    .result {
+        margin: 4rem 2.5rem 4rem 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header>.logo {
+        padding-top: 2.5rem;
+        padding-left: 2.5rem;
+    }
+
+    main {
+        margin-top: 5rem;
+        margin-left: 5rem;
+        width: 680px;
+    }
+
+    .message {
+        padding-top: 39.688rem;
+        width: 680px;
+    }
+
+    .button__container {
+        width: 680px;
+        display: flex;
+    }
+
+    .result {
+        margin: 2.5rem;
+        width: 400px;
+        height: 944px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .result > .image__result {
+        display: block;
+    }
+}
