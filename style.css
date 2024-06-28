@@ -6,8 +6,139 @@
 
 :root {
     --bg-light-blue: #F3F5FC;
+    --text-color-blue: #0A3871;
+    --text-color-gray: #343A40;
+    --text-color-dark-gray: #343A40;
 }
 
-.logo {
-    
+body {
+    background-color: var(--bg-light-blue);
+    font-family: "Inter", sans-serif;
+}
+
+header>.logo {
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+}
+
+main {
+    margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main>input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 343px;
+    height: 48px;
+    font-size: 2rem;
+    color: var(--text-color-blue);
+    font-weight: 400;
+}
+
+input::placeholder {
+    color: var(--text-color-blue);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.message {
+    padding-top: 15.688rem;
+    width: 343px;
+    display: flex;
+}
+
+.message>.message__caution__image {
+    margin-right: .5rem;
+}
+
+.message>.message__caution {
+    font-size: .75rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+.button__container {
+    margin: 1rem;
+    width: 343px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem
+}
+
+.button__encrypt,
+.button__descrypt {
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.211rem;
+    text-align: center;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.button__encrypt:hover,
+.button__descrypt:hover {
+    opacity: .9;
+}
+
+.button__encrypt {
+    background-color: var(--text-color-blue);
+    color: #FFFFFF;
+}
+
+.button__descrypt {
+    background-color: transparent;
+    color: var(--text-color-blue);
+    border: 1px solid var(--text-color-blue);
+}
+
+.result {
+    margin: 4rem 1rem 4rem 1rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    gap: 1rem;
+    background-color: #FFFFFF;
+}
+
+.result>.active {
+    display: none;
+}
+
+.result>.title__result {
+    font-size: 1.5rem;
+    color: var(--text-color-dark-gray);
+}
+
+.result>.paragraph__result {
+    font-size: 1rem;
+    color: var(--text-color-gray);
+}
+
+.button__copy {
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.211rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--text-color-blue);
+    border: 1px solid var(--text-color-blue);
+    display: none;
+}
+
+.button__copy:hover {
+    opacity: 0.9;
 }
