@@ -52,6 +52,10 @@ body {
         width: 680px;
     }
 
+    main>input {
+        line-height: 3rem;
+    }
+
     .message {
         padding-top: 39.688rem;
         width: 680px;
@@ -65,7 +69,7 @@ body {
     .result {
         margin: 2.5rem;
         width: 400px;
-        height: 944px;
+        height: 100vh;
         position: absolute;
         right: 0;
         top: 50%;
