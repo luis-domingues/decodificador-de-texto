@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --dark-blue: #0A3871;
+    --gray: #495057;
+    --bg: #F3F5FC;
+}
+
+body {
+    display: flex;
+    min-height: 100%;
+    background-color: var(--bg);
+}
+
+header {
+    margin: 2.5rem 0 0 4rem;
+}
+
+.logo img {
+    width: 1.943rem;
+    height: 3rem;
+}
+
+main {
+    width: 1440px;
+    
+    margin-left: 15rem;
+    margin-top: 10.5rem; 
+}
+
+main > textarea {
+    border: none;
+    outline: none;
+    background-color: var(--bg);
+    padding-left: .25rem;
+    width: 680px;
+    height: 288px;
+    resize: none;
+    color: var(--dark-blue);
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+main > textarea::placeholder {
+    color: var(--dark-blue);
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+main .mensagem__cuidado {
+    display: flex;
+    gap: .5rem;
+    margin-top: 30rem;
+}
+
+main .mensagem__cuidado > p {
+    columns: var(--gray);
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+}
+
+main .acoes {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 4.5rem;
+}
+
+main .acoes > button {
+    outline: none;
+    padding: 1.5rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.21rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#criptografar {
+    border: 1px solid var(--dark-blue);
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+#descriptografar {
+    border: 1px solid var(--dark-blue);
+    background-color: transparent;
+    color: var(--dark-blue);
+}
+
+aside {
+    width: 500px;
+    height: 944px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem 2.5rem 0 4rem;
+    border-radius: 2rem;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.078);
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado img {
+    max-width: 156px;
+    margin: 15rem 2rem 2rem 2rem;
+}
+
+.resultado > .resultado__titulo {
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.resultado > p {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
