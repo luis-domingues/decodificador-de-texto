@@ -31,12 +31,12 @@ header {
 
 main {
     width: 1440px;
-    
+
     margin-left: 15rem;
-    margin-top: 10.5rem; 
+    margin-top: 10.5rem;
 }
 
-main > textarea {
+main>textarea {
     border: none;
     outline: none;
     background-color: var(--bg);
@@ -51,7 +51,7 @@ main > textarea {
     line-height: 3rem;
 }
 
-main > textarea::placeholder {
+main>textarea::placeholder {
     color: var(--dark-blue);
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
@@ -65,7 +65,7 @@ main .mensagem__cuidado {
     margin-top: 30rem;
 }
 
-main .mensagem__cuidado > p {
+main .mensagem__cuidado>p {
     columns: var(--gray);
     font-size: .75rem;
     font-weight: 400;
@@ -79,7 +79,7 @@ main .acoes {
     margin-bottom: 4.5rem;
 }
 
-main .acoes > button {
+main .acoes>button {
     outline: none;
     padding: 1.5rem;
     width: 328px;
@@ -127,7 +127,7 @@ aside {
     margin: 15rem 2rem 2rem 2rem;
 }
 
-.resultado > .resultado__titulo {
+.resultado>.resultado__titulo {
     padding: 2rem;
     font-size: 1.5rem;
     font-weight: 700;
@@ -135,9 +135,26 @@ aside {
     text-align: center;
 }
 
-.resultado > p {
-    padding: 1rem 2rem;
+.resultado>textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    color: var(--dark-blue);
+    font-family: 'Inter', sans-serif;
     text-align: center;
+    height: 50px;
+}
+
+#copiarResultado {
+    border: 1px solid var(--dark-blue);
+    width: 100px;
+    height: 60px;
+    border-radius: 1.5rem;
     font-size: 1rem;
-    line-height: 1.5rem;
+    font-weight: 400;
+    line-height: 1.21rem;
+    background-color: transparent;
+    color: var(--dark-blue);
+    cursor: pointer;
+    margin-top: 14rem;
 }
