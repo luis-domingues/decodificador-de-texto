@@ -1,16 +1,18 @@
-document.getElementById('criptografar').addEventListener('click', function () {
+document.getElementById('criptografar').addEventListener('click', function() {
     let textoEntrada = document.getElementById('textoEntrada').value;
     let textoCriptografado = criptografar(textoEntrada);
     document.getElementById('textoResultado').value = textoCriptografado;
+    atualizarTituloResultado(textoCriptografado);
 });
 
-document.getElementById('descriptografar').addEventListener('click', function () {
+document.getElementById('descriptografar').addEventListener('click', function() {
     let textoEntrada = document.getElementById('textoEntrada').value;
     let textoDescriptografado = descriptografar(textoEntrada);
     document.getElementById('textoResultado').value = textoDescriptografado;
+    atualizarTituloResultado(textoDescriptografado);
 });
 
-document.getElementById('copiarResultado').addEventListener('click', function () {
+document.getElementById('copiarResultado').addEventListener('click', function() {
     let textoResultado = document.getElementById('textoResultado');
     textoResultado.select();
     document.execCommand('copy');
@@ -18,22 +20,30 @@ document.getElementById('copiarResultado').addEventListener('click', function ()
 
 function criptografar(texto) {
     let textoCriptografado = texto.replace(/e/g, 'enter')
-        .replace(/i/g, 'imes')
-        .replace(/a/g, 'ai')
-        .replace(/o/g, 'ober')
-        .replace(/u/g, 'ufat');
+                                  .replace(/i/g, 'imes')
+                                  .replace(/a/g, 'ai')
+                                  .replace(/o/g, 'ober')
+                                  .replace(/u/g, 'ufat');
     return textoCriptografado;
 }
 
 function descriptografar(texto) {
     let textoDescriptografado = texto.replace(/enter/g, 'e')
-        .replace(/imes/g, 'i')
-        .replace(/ai/g, 'a')
-        .replace(/ober/g, 'o')
-        .replace(/ufat/g, 'u');
+                                     .replace(/imes/g, 'i')
+                                     .replace(/ai/g, 'a')
+                                     .replace(/ober/g, 'o')
+                                     .replace(/ufat/g, 'u');
     return textoDescriptografado;
 }
 
+function atualizarTituloResultado(texto) {
+    let tituloResultado = document.querySelector('.resultado__titulo');
+    if (texto) {
+        tituloResultado.textContent = '';
+    } else {
+        tituloResultado.textContent = 'Nenhuma mensagem encontrada';
+    }
+}
 
 const botaoCopiar = document.getElementById("copiarResultado");
 
